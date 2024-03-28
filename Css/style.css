@@ -1,0 +1,239 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #78aafa 0%, #c2e9fb 100%);
+    color: var(--text-color); 
+    min-height: 100vh; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+}
+:root {
+    --widget-background-color: rgba(255, 255, 255, 0.8);
+    --widget-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --hover-background-color: hsl(240, 8%, 80%);
+    --text-color: #000;
+    --border-color: hsla(217, 10%, 67%, 0.863);
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.header {
+    background-color: rgba(231, 237, 238, 0.85);
+    padding: 1em;
+    align-items: center;
+    border-radius: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.header span{
+    margin: 1.5em;
+}
+.header #time{
+    font-weight: 600;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+.heading h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2em;
+}
+
+.widget{
+    background-color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    padding: 1em;
+    border-radius: 1.5em;
+    box-shadow: var(--widget-shadow);
+    min-width: 250px;
+    max-width: 330px;
+    max-height: 400px;
+}
+
+.links{
+    max-height:600px;
+}
+
+h3{
+    text-align: center;
+}
+
+.links ul{
+    padding: 0;
+    margin: 0;
+}
+.links ul li{
+    display: flex;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+.links ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    flex-grow: 1;
+    
+}
+.links ul li i{
+    margin-right: 1em;
+    font-size: 2em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.button-container button, #add-link-form button{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007Bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover, #add-link-form button:hover{
+    background-color: #0056b3;
+}
+
+#add-link-form {
+    margin-top: 20px;
+}
+
+#add-link-form input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    display: block;
+    width: calc(100% - 22px);
+    
+}
+
+.xBtn {
+    cursor: pointer;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.addButton {
+    background-color: var(--background-color);
+    border-radius: 1em;
+    padding: 0.5em;
+    box-shadow: var(--widget-shadow);
+    cursor: pointer;
+}
+
+.links input {
+    border: 1px solid var(--border-color);
+    padding: 0.5em;
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em;
+}
+
+.hidden{
+    display: none;
+}
+
+.weather-content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.weather-content ul li{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    padding: 10px;
+}
+.weather-content ul li span, 
+.weather-content ul li p, 
+.weather-content ul li i {
+    margin-right: 10px;
+    background-color: rgba(231, 237, 238, 0.85);
+    border-radius: 10px; 
+    padding: 10px;
+}
+.weather-content ul li i {
+    font-size: 24px; 
+}
+
+.widget.football .fixture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec; 
+}
+
+.widget.football .team-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.widget.football {
+    overflow-y: auto;
+    max-height: 400px; 
+}
+
+.textbox{
+    width: 100%;
+    height: 25em;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+}
+
+.generate-container{
+    display: flex;
+    justify-content: center;
+}
+.generateBackground{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(231, 237, 238, 0.85);
+    margin-top: 2em;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.generateBtn{
+    cursor: pointer;
+    padding: 1em;
+    align-items: left;
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+}
+.generateBtn i{
+    font-size: 20px;
+}
+.generateBtn i:hover{
+    color: #ff6347;
+}

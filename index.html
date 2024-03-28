@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Dashboard</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <header class="header">
+            <span id="time">Time</span> <span id="date">Date</span>
+        </header>
+    </div>
+    <div class="heading">
+        <h1 id="dash-heading" contenteditable="true">Noah Stener Dashboard</h1>
+    </div>
+    <div class="content">
+        <div class="widget links">
+            <h3>Quick links</h3>
+            <ul id="link-list">
+                <li>
+                    <a href="https://google.se" target ="_blank">Google</a>
+                    <button class="xBtn">X</button>
+                </li>
+                <li>
+                    <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+                    <button class="xBtn">X</button>
+                </li>
+                <li>
+                    <a href="https://chat.openai.com" target="_blank">Chat GPT</a>
+                    <button class="xBtn">X</button>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank">Youtube</a>
+                    <button class="xBtn">X</button>
+                </li>
+            </ul>
+            <div class="button-container">
+                <button class="addButton">Add Link</button>
+            </div>
+            <div id="add-link-form" class="hidden">
+                <input type="text" id="new-link-name" placeholder="linkname"/>
+                <input type="text" id="new-link-url"  placeholder="link URL"/>
+                <button id="confirm-new-link" type="button">Confirm</button>
+            </div>
+        </div>
+        <div class="widget weather-container">
+            <h3>Weather</h3>
+            <div class="weather-content">
+                <ul>
+                    <li>
+                        <i id="icon-today" class="fas"></i>
+                        <span id="weekday-today"></span>
+                        <p id="temp-today"></p>
+                    </li>
+                    <li>
+                        <i id="icon-tomorrow" class="fas"></i>
+                        <span id="weekday-tomorrow"></span>
+                        <p id="temp-tomorrow"></p>
+                    </li>
+                    <li>
+                        <i id="icon-day-after" class="fas"></i>
+                        <span id="weekday-day-after"></span>
+                        <p id="temp-day-after"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="widget football">
+            <h3>Upcoming fixtures</h3>
+        </div>
+        <div class="widget notes">
+            <h3>Notes</h3>
+            <textarea class="textbox"></textarea>
+        </div>
+    </div>
+    <div class="generate-container">
+        <div class="generateBackground">
+            <button class="generateBtn">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <p>Generate Background</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
